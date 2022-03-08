@@ -17,27 +17,37 @@
         #content {
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
         }
 
         body {
-            background-color: red;
+            background-color: #d6001c;
             margin: 0;
         }
         #header {
             background-color: #fff;
-            height: 100px;
+            height: 20px;
+            max-height: 200px;
             width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
+            flex:1 0 auto;
         }
         #title {
             font-size: 70px;
             font-family: vagRounded;
-            color: red;
+            color: #d6001c;
             margin-left: 50px;
         }   
+
+        nav {
+            display: flex;
+            flex: 0 1 auto;
+        }
 
         nav button {
             width: 300px;
@@ -49,10 +59,11 @@
         }
 
         #container {
-            margin: 70px;
-            padding: 100px;
+            max-width: 700px;
             background-color: #fff;
             display: flex;
+            margin: 5rem;
+            padding: 2rem;
         }
     </style>
 </head>
@@ -65,11 +76,14 @@
                 <button id="menu">MENU</button>
                 <button id="contact">CONTACT</button>
             </nav>
-            
         </div>
         <div id="container">
-
+            <div id="home">
+                <img src="" alt="" id="ebilloj">
+                JOLLIBOTS
+            </div>
         </div>
+        <div id="footer">kyleetaan! theodinproject</div>
     </div>
 </body>
 </html>
