@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebilloj</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        @font-face {
+            font-family: vagRounded;
+            src: url('/srfc/VAG Rounded Regular.ttf');
+        }
+
+        #content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        body {
+            background-color: red;
+            margin: 0;
+        }
+        #header {
+            background-color: #fff;
+            height: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        #title {
+            font-size: 70px;
+            font-family: vagRounded;
+            color: red;
+            margin-left: 50px;
+        }   
+
+        nav button {
+            width: 300px;
+            height: 50px;
+            font-size: 30px;
+            outline: none;
+            border: none;
+            background-color: #fff;
+        }
+
+        #container {
+            margin: 70px;
+            padding: 100px;
+            background-color: #fff;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div id="header">
+            <div id="title">Ebilloj</div>
+            <nav>
+                <button id="home">HOME</button>
+                <button id="menu">MENU</button>
+                <button id="contact">CONTACT</button>
+            </nav>
+            
+        </div>
+        <div id="container">
+
+        </div>
+    </div>
+</body>
+</html>
