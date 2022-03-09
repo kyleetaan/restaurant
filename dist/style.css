@@ -1,0 +1,76 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+  @font-face {
+    font-family: vagRounded;
+    src: url('font/VAGRoundedRegular.ttf');
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    font-family: vagRounded;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+}
+#header {
+    background-color: #d6001c;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-color: yellow;
+    border-style: hidden hidden solid hidden;
+    border-bottom-width: 10px;
+}
+#title {
+    font-size: 70px;
+    color: #d6001c;
+    margin-left: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    width: 300px;
+}   
+
+#links {
+    display: flex;
+    background-color: #d6001c;
+}
+
+nav button {
+    width: 300px;
+    height: 50px;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-family: vagRounded;
+}
+
+#container {
+    max-width: 700px;
+    background-color: #d6001c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem;
+    padding: 2rem;
+}
