@@ -6,11 +6,11 @@ function createHeader() {
     const header = document.createElement('div');
     header.id = "header";
 
-    const title = document.createElement('div');
-    title.id = "title";
-    title.textContent ="ebilloJ";
+    const logo = document.createElement('img');
+    logo.src = "img/jb_logo_with_wordmark.png";
+    logo.id = "title";
 
-    header.appendChild(title);
+    header.appendChild(logo);
     header.appendChild(createNav());
 
     return header;
@@ -20,14 +20,17 @@ function createNav() {
     const home = document.createElement('button');
     home.id = "home";
     home.textContent = "HOME";
+    home.addEventListener('click', appendHome);
 
     const menu = document.createElement('button');
     menu.id = "menu";
     menu.textContent = "MENU"
+    menu.addEventListener('click', appendMenu);
 
     const contact = document.createElement('button');
     contact.id = "contact";
     contact.textContent = "CONTACT";
+    contact.addEventListener('click', appendContact);
 
     const links = document.createElement('nav');
     links.id = "links";
@@ -47,7 +50,7 @@ function createContainer() {
 function createFooter() {
     const footer = document.createElement('div');
     footer.id = "footer";
-    footer.textContent = "kyleetaan! theodinproject";
+    footer.textContent = "fake Jollibee website - @kyleetaan ~theodinproject~";
     return footer;
 }
 

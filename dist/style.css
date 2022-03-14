@@ -6,7 +6,7 @@ html {
   }
 
 
-  @font-face {
+@font-face {
     font-family: vagRounded;
     src: url('font/VAGRoundedRegular.ttf');
 }
@@ -26,7 +26,7 @@ body {
 }
 #header {
     background-color: #d6001c;
-    height: 200px;
+    height: 100px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -36,17 +36,15 @@ body {
     border-bottom-width: 10px;
 }
 #title {
-    font-size: 70px;
-    color: #d6001c;
-    margin-left: 50px;
     background-color: white;
     display: flex;
     justify-content: center;
+    overflow: hidden;
     align-items: center;
     height: 100%;
     margin: 0;
     width: 300px;
-}   
+}  
 
 #links {
     display: flex;
@@ -64,8 +62,12 @@ nav button {
     font-family: vagRounded;
 }
 
+nav button:hover {
+    color: yellow;
+}
+
 #container {
-    max-width: 700px;
+    max-width: 10000px;
     background-color: #d6001c;
     display: flex;
     flex-direction: column;
@@ -73,4 +75,43 @@ nav button {
     align-items: center;
     margin: 5rem;
     padding: 2rem;
+    border-radius: 10px;
+    border-style:solid;
+    border-color: yellow;
+    border-width: 10px;
+}
+
+#main {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+img {
+    height: 200px;
+}
+
+.center {
+    text-align: center;
+}
+
+.whitetxt {
+    color: white;
+}
+
+#menu {
+    max-width: 700px;
+    gap: 100px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+div p {
+    text-align: center;
 }
